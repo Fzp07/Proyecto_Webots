@@ -1,0 +1,160 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Cardboard.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/pal_robotics/tiago/protos/Tiago.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/MetalStorageBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.160329124770108 -0.002415188221683827 -0.9870606559965324 3.171310869685082
+  position 15.965260690931569 -2.18742344426982 4.798264782340232
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 30 40
+  appearance PBRAppearance {
+    baseColor 0.76 0.7 0.5
+    roughness 1
+    metalness 0
+  }
+}
+DEF Recolector Tiago {
+  hidden position_0_0 98.58326971096463
+  hidden position_0_1 102.96465700491143
+  hidden position_0_2 0.6352720956563834
+  hidden position_0_3 7.521507118246179
+  hidden position_0_4 -1.1269044895109621
+  hidden position_0_5 -2.0319385323829042
+  hidden position_1_0 -0.00025533603034494986
+  hidden translation_2 0 0 0.599744663969655
+  hidden position_2_0 4.531041183998604e-08
+  hidden position_3_0 0.06992629336834556
+  hidden translation_4 0.02509999994235771 0.19399989262935746 -0.171
+  hidden rotation_4 0 0 1 0.008926293368306843
+  hidden position_4_0 0.29993389857415825
+  hidden rotation_5 0.9779217545685476 -0.14776481573132627 0.1477653585027984 1.5931237623790524
+  hidden position_5_0 -0.3000418631063378
+  hidden rotation_6 -0.5104459901850191 -0.6920965867662041 0.5103402842129996 1.9307814631619127
+  hidden position_6_0 0.1000243552187993
+  hidden rotation_7 -0.6158267394032899 -0.5571165102611699 -0.5571163442498596 2.037646260027742
+  hidden position_7_0 -3.6658945260699427e-09
+  hidden rotation_8 1.832940530258492e-09 -1 -1.8329472630373673e-09 1.5708
+  hidden position_8_0 -6.6430188384282324e-06
+  hidden rotation_9 -0.5773477122940981 -0.5773515476277208 -0.5773515476385659 2.09440383535296
+  hidden position_9_0 -1.098321956925335e-09
+  hidden rotation_10 0.5773502689782548 0.5773502696123696 0.577350268978253 2.0943999993658835
+  hidden position_12_0 -1.0283573925854933e-06
+  hidden position_12_1 2.040091451525533e-06
+  hidden translation_33 1.0283573925854933e-06 0 0
+  hidden translation_34 2.040091451525533e-06 0 0
+  hidden rotation_35 0 0 1 4.2146848510894035e-08
+  hidden position_35_0 -6.749303835958438e-07
+  hidden rotation_36 0.9999999999998861 3.374639522213082e-07 -3.3746519179789634e-07 1.5708000000001137
+  hidden translation_45 -0.00012738824419766814 -4.073151624606197e-05 0.029973142368587335
+  hidden rotation_45 0.2200644755902769 -0.12599313235715814 -0.967314507893895 3.6465722152945524e-06
+  hidden rotation_49 0.4331689493163634 -0.6373231822890714 0.6373255233121367 2.3240564843014453
+  hidden rotation_50 0.2527978954836578 0.6841380655893318 -0.6841405785733811 2.6463739231799175
+  hidden rotation_51 0 0 1 0.6352720956563838
+  hidden position_51_0 376.2710406570954
+  hidden rotation_52 -0.8827036416624819 -0.33229013664731677 -0.33229135721938413 1.6952432927207415
+  hidden rotation_53 0 0 -1 5.044863496112995
+  hidden position_53_0 363.54598992279057
+  hidden rotation_54 -0.8328014846315624 -0.39143362245232327 -0.3914350602709438 1.7527476338331367
+  hidden rotation_55 0 0 -1 1.1269044895109621
+  hidden position_55_0 382.4196416237173
+  hidden rotation_56 0.8407319078427508 0.3828634105409304 0.3828648168793463 4.539766616018785
+  hidden rotation_57 0 0 -1 2.0319385323829042
+  hidden position_57_0 370.2973553716701
+  hidden rotation_58 0.9592739228744049 0.19974139254935164 0.1997421262418017 4.670818674207429
+  translation 1.5217360546848104 -1.7678882100237896 0.08831663558378372
+  rotation 0.40158741546681936 -0.10553610201530159 -0.9097195605845222 0.11429856549113243
+  controller "recolector"
+  controllerArgs [
+    ""
+  ]
+  supervisor TRUE
+}
+DEF basura_1 Solid {
+  translation -2 0.5 0.05
+  children [
+    Shape {
+      appearance Cardboard {
+        colorOverride 0 0.333333 1
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "basura_1"
+}
+DEF basura_2 Solid {
+  translation 2.07994 0.5001 0.05
+  children [
+    Shape {
+      appearance Cardboard {
+        colorOverride 0 0.333333 0
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "basura_2"
+}
+DEF basura_3 Solid {
+  translation -1.2 0.5 0.1
+  children [
+    Shape {
+      appearance Cardboard {
+        colorOverride 1 0 0
+      }
+      geometry Sphere {
+        radius 0.1
+      }
+    }
+  ]
+  name "basura_4"
+}
+DEF basura_4 Solid {
+  translation -0.8 0.5 0
+  children [
+    Shape {
+      appearance Cardboard {
+        colorOverride 0 0 0
+      }
+      geometry Cone {
+        bottomRadius 0.05
+        height 0.1
+      }
+    }
+  ]
+  name "basura_5"
+}
+DEF basura_5 Solid {
+  translation -0.4 0.5 0
+  children [
+    Shape {
+      appearance Cardboard {
+        colorOverride 0.333333 0 1
+      }
+      geometry Cone {
+        bottomRadius 0.05
+        height 0.1
+      }
+    }
+  ]
+  name "basura_6"
+}
+DEF contenedor MetalStorageBox {
+  translation 2.04 -1.85 0
+}
